@@ -2,7 +2,8 @@
 	"name":"ABC-TV",
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
-		"sql_participant" : "UID"
+		"sql_participant" : "UID",
+		"garry":"a"
 	},
 	"modules":
 	[
