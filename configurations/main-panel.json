@@ -81,19 +81,92 @@
 								"url":"https://woolcock-imr.github.io/abc-tv/task/Stroop_colour_form.html"
 							}
 							,{
-								"module_id":"general",
-								"name":"General",
-								"table_id":"20010782",
-								"url":"https://woolcock-imr.github.io/modules/abc-tv/task/under_construction.html",
+								"module_id":"ToL",
+								"name":"Tower of London",
+								"table_id":"20011099",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/Tower_of_London.html",
 								"counting":"1",
 								"quest":"1",
-								"form_module":"general_form"
+								"form_module":"Tol_form"
 							}
 							,{
-								"module_id":"general_form",
-								"table_id":"20010782",
-								"url":"https://woolcock-imr.github.io/modules/abc-tv/task/under_construction.form.html"
+								"module_id":"Tol_form",
+								"table_id":"20011099",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/Tower_of_London_form.html"
 							}
+							,{
+								"module_id":"Prenap_Finger_Tapping",
+								"name":"Pre-Nap Finger Tapping Task",
+								"table_id":"20011100",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/finger_tapping_12.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"Prenap_FT"
+							}
+							,{
+								"module_id":"Prenap_FT",
+								"table_id":"20011100",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/finger_tapping_12_form.html"
+							}
+							,{
+								"module_id":"Prenap_KSS",
+								"name":"Pre-Nap KSS",
+								"table_id":"20011101",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/kss.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"Prenap_KSS_form"
+							}
+							,{
+								"module_id":"Prenap_KSS_form",
+								"table_id":"20011101",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/kss_form.html"
+							}
+							,{
+								"module_id":"Postnap_KSS",
+								"name":"Post-Nap KSS",
+								"table_id":"20011102",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/kss.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"Postnap_KSS_form"
+							}
+							,{
+								"module_id":"Postnap_KSS_form",
+								"table_id":"20011102",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/kss_form.html"
+							}
+							,{
+								"module_id":"Postnap_Finger_Tapping",
+								"name":"Post-Nap Finger Tapping Task",
+								"table_id":"20011103",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/finger_tapping_12.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"Postnap_FT"
+							}
+							,{
+								"module_id":"Postnap_FT",
+								"table_id":"20011103",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/finger_tapping_12_form.html"
+							}
+							,{
+								"module_id":"Post_Nap_DISS",
+								"name":"Post-Nap DISS",
+								"table_id":"20011104",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/DISS.html",
+								"counting":"1",
+								"quest":"1",
+								"form_module":"DISS_form"
+							}
+							,{
+								"module_id":"DISS_form",
+								"table_id":"20011104",
+								"url":"https://woolcock-imr.github.io/abc-tv/task/DISS.form.html"
+							}
+
+
+
 						]
 					}
 				]
