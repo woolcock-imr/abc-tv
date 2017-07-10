@@ -165,9 +165,12 @@
 								"table_id":"20011104",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.form.html"
 							}
-
-
-
+							,{
+								"module_id":"Wordpairs",
+								"name":"Memory Test Word Pairs",
+								"table_id":"",
+								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Memory_task.html",
+								}
 						]
 					}
 				]

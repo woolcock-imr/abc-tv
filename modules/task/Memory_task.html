@@ -1,0 +1,166 @@
+<section>
+    <div id=toolbar__ID>
+          <a id=back__ID>Back</a> <a id=start__ID>Start</a> <a id=pause__ID>Pause</a> <a id=stop__ID>Stop</a>
+    </div>
+    <img id=img__ID />
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__BASE__/vmiis/Common-Code/toolbar/back.js
+        //-------------------------------------
+        var pause_array=[
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/2.Slide33.jpg',time:1000},
+        ]
+        var img_array=[
+                            //----------------Word pairs-------------\\
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_1.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_2.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_3.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_4.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_5.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_6.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_7.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_8.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_9.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_10.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_11.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_12.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_13.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_14.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_15.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_16.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_17.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_18.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_19.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_20.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_21.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_22.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_23.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_24.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_25.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_26.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_27.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_28.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_29.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_30.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_31.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/pres_32.jpg',time:5000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Wordpairs/2.Slide33.jpg',time:5000},
+
+                                  //----------------Recall-------------\\
+
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_68.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_69.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_70.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_71.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_72.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_73.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_74.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_75.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_76.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_77.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_78.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_79.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_80.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_81.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_82.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_83.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_84.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_85.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_86.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_87.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_88.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_89.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_90.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_91.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_92.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_93.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_94.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_95.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_96.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_97.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_98.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/Recall/Recall_99.jpg',time:12000},
+            {src:'https://woolcock-imr.github.io/abc-tv/images/Wordpairs/END.jpg',time:3000},
+
+        ]
+        //----------------------------------
+        var random_array=function(array){
+            var currentIndex=array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+        //----------------------------------
+        var group1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+        var group1_random=random_array(group1);
+        var group2=[34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65];
+        var group2_random=random_array(group2);
+        var group3=[67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98];
+        var group3_random=random_array(group3);
+        var group4=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+        var group4_random_0=random_array(group4);
+        var group4_random=[];
+        for(var i=0;i<32;i++){
+            group4_random.push(98+2*group4_random_0[i])
+            group4_random.push(98+2*group4_random_0[i]+1)
+        }
+        //----------------------------------
+        var I=-1;
+        var N=img_array.length;
+        var pause=false;
+              $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#pause__ID').on('click',function(){
+            if (pause==false) {
+                $("#pause__ID").html('Continue');
+                pause=true;
+            }
+            else {
+                $("#pause__ID").html('Pause');
+                pause=false;
+            }
+        })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+            if(I>=0 && I<=162){ //total 163 images
+                if(pause==false){
+                    var new_I=I+1;
+                    if(new_I>=1 && new_I<=32) new_I=group1_random[new_I-1];             // 1-32
+                    else if(new_I>=34 && new_I<=65) new_I=group2_random[new_I-34];
+                    else if(new_I>=67 && new_I<=98) new_I=group3_random[new_I-67];
+                    else if(new_I>=100 && new_I<=163) new_I=group4_random[new_I-100];
+    console.log(new_I)
+                    $("#img__ID").attr("src",img_array[new_I-1].src);
+                    setTimeout(set_img, img_array[new_I-1].time);
+                    I++;
+                }
+                else{
+                    $("#img__ID").attr("src",pause_array[0].src);
+                    setTimeout(set_img, pause_array[0].time);
+                }
+            }
+        }
+    }
+</script>
+<style>
+    VmInclude:__BASE__/vmiis/Common-Code/style/default.css
+</style>
