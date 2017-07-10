@@ -8,7 +8,7 @@
 	[
 		{
 		   "module_id" : "participant_login_setup",
-		   "table_id":"20010811",
+		   "table_id":"20011-941",
 		   "url" : "https://woolcock-imr.github.io/modules/abc-tv/participant_login_setup.html"
 		}
 		,{
@@ -30,14 +30,14 @@
 							{
 								"module_id":"participant",
 								"name":"Participant",
-								"table_id":"20010809",
+								"table_id":"20011094",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/participant.html",
 								"counting":"1"
 							}
 							,{
 								"module_id":"task_notes",
 								"name":"Notes",
-								"table_id":"20010810",
+								"table_id":"20011095",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task_notes.html",
 								"counting":"1"
 							}
@@ -49,7 +49,7 @@
 				"sections":
 				[
 					{
-						"name":"SHQ",
+						"name":"Test Battery",
 						"modules":
 						[
 							{
