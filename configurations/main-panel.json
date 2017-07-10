@@ -170,6 +170,8 @@
 								"name":"Memory Test Word Pairs",
 								"table_id":"--------",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Memory_task.html",
+								"counting":"1",
+								"quest":"1",
 								}
 						]
 					}
