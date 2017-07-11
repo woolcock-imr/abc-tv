@@ -11,7 +11,7 @@
                 <tr><td>Login ID</td><td><input name=Login_ID__ID id=Login_ID__ID type=text readonly></input></td></tr>
                 <tr><td>Password</td><td><input name=Password__ID id=Password__ID type=text></input></td></tr>
                 <tr id=tr_table_grid__ID><td colspan=2><table id=table_grid__ID></table></td></tr>
-                <tr id=tr_builder__ID style="display:none"><td>Questionnaires</td><td><textarea name=List__ID id=List__ID type=text></textarea></td></tr>
+                <tr id=tr_builder__ID style="adisplay:none"><td>Questionnaire IDs</td><td><textarea name=List__ID id=List__ID type=text readonly></textarea></td></tr>
             </table>
         </form>
     </div>
@@ -19,49 +19,67 @@
 <script>
     function F__ID(){
         //---------------------------------------------
-        var _op,_module=$vm.module_list[$vm.vm['__ID'].name],_app_id=_module.var.app_id;
-        VmInclude:__BASE__/vmiis/Common-Code/master/toolbar/back.js
-        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
-        VmInclude:__BASE__/woolcock-imr/ABC-TV/modules/navigation/quest_module_list.js
+        VmInclude:__LIB__/vmiis/Common-Code/toolbar/back.js
+        VmInclude:__LIB__/vmiis/Common-Code/style/ease-in-out.js
         //---------------------------------------------
+		var _mlist=$vm.module_list;
+		var _mobj=$vm.vm['__ID'];
+		var _sys=_mobj.op.sys;
+		var _module=$vm.module_list[_mobj.name];
+		//-----------------------------------------------
         var mid="-1",uid="-1";
         //---------------------------------------------
         $('#name__ID').text('Participant Login Setup');
         //---------------------------------------------
         $('#D__ID').on('load',function(){
-            var name=_app_id+'participant_login_setup';
-            uid=$vm.vm['__ID'].op.uid;
-            mid=$vm.module_list[name].table_id;
+            uid=_mobj.op.participant_uid;
+            mid=_module.table_id;
             $('#Login_ID__ID').val(uid+"-"+mid);
-            $('#Participant__ID').val('');
+            $('#Participant__ID').val(_mobj.op.participant);
             $('#Password__ID').val('');
-            load_data(A);
+            load_data();
         })
         //-------------------------------------
-        var load_data=function(A){
-            var pid=$vm.module_list[$vm.vm['__ID'].name].table_id;
-            var sql="select top 1 Login_ID= @('Login_ID'),Password= @('Password'),List= @('List') from [TABLE-"+pid+"] where PUID="+uid;
+        var load_data=function(){
+            var sql="select top 1 Login_ID= @('Login_ID'),Password= @('Password'),List= @('List') from [TABLE-"+mid+"] where PUID="+uid;
+			sql=sql.replace( /@\(\'/g, "JSON_VALUE(Information,'$." );
             var req_data={ cmd:"query_records",db_pid:mid, sql:sql}
             $VmAPI.request({data:req_data,callback:function(res){
                 if(res.records.length>0){
                     $('#Login_ID__ID').val(res.records[0].Login_ID);
                     $('#Password__ID').val(res.records[0].Password);
                     $('#List__ID').val(res.records[0].List);
+					//$('#Participant__ID').val(res.records[0].Participant)
                 }
                 else{
                     $('#Password__ID').val($vm.vm_password(8,false));
+					$('#List__ID').val('');
                 }
-                var participant_pid=$vm.module_list[A+'participant'].table_id;
-                sql="select participant=@('Subject_Initials')+' '+@('DOB') from [TABLE-"+participant_pid+"] where UID=@I1";
-                req={cmd:'query_records',sql:sql,i1:uid}
-                $VmAPI.request({data:req,callback:function(res2){
-                    $('#Participant__ID').val(res2.records[0].participant);
-                    set_check_list();
-                }})
+				set_check_list();
             }})
         }
         //---------------------------------------------
+		var list={}
         var set_check_list=function(){
+			var columns=_sys.config.panel.columns;
+			for(i=0;i<columns.length;i++){
+				var aColumn=columns[i];
+				for(j=0;j<aColumn.sections.length;j++){
+					var aSection=aColumn.sections[j];
+					var name=aSection.name;
+					var tasks=[];
+					for(k=0;k<aSection.modules.length;k++){
+						var aModule=aSection.modules[k];
+						if(aModule.quest=='1'){
+							tasks.push(aModule.module_id);
+							_mlist[aModule.module_id].task=aModule.name;
+						}
+					}
+					if(tasks.length>0){
+						list[name]=tasks;
+					}
+				}
+			}
             var tab="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
             var dot='&#8226;&nbsp;';
             var txtA="";
@@ -77,7 +95,8 @@
                     if($vm.module_list[sublist[i]]!==undefined){
                         pid=$vm.module_list[sublist[i]].table_id;
                         task=$vm.module_list[sublist[i]].task;
-                	    txt+="<tr><td>"+No+"</td><td>"+pid+"</td><td>"+tab+dot+task+"</td><td><input id=task"+pid+" type=checkbox /></td></tr>";
+                        if($vm.user=='_builder')  txt+="<tr><td>"+No+"</td><td>"+pid+"</td><td>"+tab+dot+task+"</td><td><input id=task"+pid+" type=checkbox />"+sublist[i]+"-"+pid+"</td></tr>";
+                        else txt+="<tr><td>"+No+"</td><td>"+pid+"</td><td>"+tab+dot+task+"</td><td><input id=task"+pid+" type=checkbox /></td></tr>";
                     }
                     else alert(sublist[i] +' is not in the module list.')
                 }
@@ -182,7 +201,7 @@
       #D__ID,#pvdiv__ID{
           font-size:10pt;
           font-family: Verdana,Helvetica,Arial,sans-serif;
-          background: url("__BASE__/vmiis/common-code/image/texture.png");
+          background: url("__LIB__/vmiis/common-code/image/texture.png");
       }
       #D__ID{
           /*background-color:#fff;*/

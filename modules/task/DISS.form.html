@@ -1,5 +1,5 @@
 <section>
-    VmInclude:__BASE__/vmiis/Common-Code/toolbar/back_save.html
+    VmInclude:__PARTS__/toolbar/back_save.html
 	<form id=F__ID>
         <table id=tb__ID style='width:900px;'>
             <colgroup><col style='width:250px'/>
@@ -65,9 +65,9 @@
 <script>
     function F__ID(){
         //----------------------------------
-        VmInclude:__BASE__/woolcock-imr/ABC-TV/common-code/participant.js
-        VmInclude:__BASE__/vmiis/Common-Code/grid/form.js
-        var _task_fields;
+		VmInclude:__PARTS__/grid/form.js
+        VmInclude:__PARTS__/style/ease-in-out.2.js
+		VmInclude:__CURRENT_PATH__/task.form.js
         //----------------------------------
         $('#D__ID').on('load',function(){
             _init();
@@ -136,11 +136,12 @@
         _before_submit_form=function(){
             return true;
         }
+		//----------------------------------
     }
 </script>
 <style>
-VmInclude:__BASE__/vmiis/Common-Code/toolbar/toolbar.css
-VmInclude:__BASE__/vmiis/Common-Code/grid/form.css
+VmInclude:__PARTS__/toolbar/toolbar.css
+VmInclude:__PARTS__/grid/form.css
     #tb__ID input[type=radio]{
         cursor:pointer;
     }

@@ -1,12 +1,12 @@
 <section>
-    VmInclude:__BASE__/vmiis/Common-Code/grid/grid.html
+    VmInclude:__PARTS__/grid/grid.html
 </section>
 <script>
     function F__ID(){
         //-------------------------------------
-        VmInclude:__BASE__/vmiis/Common-Code/grid/grid.js
-        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
-        VmInclude:__BASE__/woolcock-imr/ABC-TV/common-code/task.js
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+        VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="Alert,Sad,Tense,Effort,Happy,Weary,calm,Sleepy,Overall,Clear,fatigue,anxious,exhausted,relaxed,forgetful,efficient,stressed,energetic,irritable,Concentrate";
         _fields="_Form|form_module,Status|S3,Notes|NT,Participant,"+_task_fields;
@@ -29,10 +29,11 @@
             record.kessler=(parseInt(record.kessler_1)+parseInt(record.kessler_2)+parseInt(record.kessler_3)+parseInt(record.kessler_4)+parseInt(record.kessler_5)+parseInt(record.kessler_6)+parseInt(record.kessler_7)+parseInt(record.kessler_8)+parseInt(record.kessler_9)+parseInt(record.kessler_10)).toString();
             return _set_status_and_participant(record,dbv);
         }
+		//-------------------------------------
     }
 </script>
 <style>
-    VmInclude:__BASE__/vmiis/Common-Code/grid/grid.css
+    VmInclude:__PARTS__/grid/grid.css
     ul.ui-autocomplete.ui-menu{font-size:12px}
     .ui-autocomplete li:hover{
         color:White;
