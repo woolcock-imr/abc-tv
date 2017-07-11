@@ -2,7 +2,8 @@
 	"name":"ABC-TV",
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
-		"sql_participant" : "UID"
+		"sql_participant" : "UID",
+		"garry":"a"
 	},
 	"modules":
 	[
@@ -164,9 +165,14 @@
 								"table_id":"20011104",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.form.html"
 							}
-
-
-
+							,{
+								"module_id":"Wordpairs",
+								"name":"Memory Test Word Pairs",
+								"table_id":"20011104",
+								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Memory_task.html",
+								"counting":"1",
+								"quest":"1",
+								}
 						]
 					}
 				]
