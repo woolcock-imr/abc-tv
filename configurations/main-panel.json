@@ -3,14 +3,14 @@
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
 		"sql_participant" : "@('Initials')+' '+@('DOB')",
-		"child_configuration_url":"https://woolcock-imr.github.io/abc-tv/configurations/child-panel.json"
+		"child_configuration_url":"https://garrychowimr.github.io/abc-tv/configurations/child-panel.json"
 	},
 	"modules":
 	[
 		{
 		   "module_id" : "participant_login_setup",
 		   "table_id":"20011096",
-		   "url" : "https://woolcock-imr.github.io/abc-tv/modules/participant_login_setup.html"
+		   "url" : "https://garrychowimr.github.io/abc-tv/modules/participant_login_setup.html"
 		}
 		,{
 		   "module_id" : "questionnaire",
@@ -32,14 +32,14 @@
 								"module_id":"participant",
 								"name":"Participant",
 								"table_id":"20011094",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/participant.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/participant.html",
 								"counting":"1"
 							}
 							,{
 								"module_id":"task_notes",
 								"name":"Notes",
 								"table_id":"20011095",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task_notes.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task_notes.html",
 								"counting":"1"
 							}
 						]
@@ -58,7 +58,7 @@
 								"module_id":"Pre_Nap_DISS",
 								"name":"DISS",
 								"table_id":"20011097",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/DISS.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"DISS_form"
@@ -66,13 +66,13 @@
 							,{
 								"module_id":"DISS_form",
 								"table_id":"20011097",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/DISS.form.html"
 							}
 							,{
 								"module_id":"Pre_Nap_Stroop",
 								"name":"Stroop Colour",
 								"table_id":"20011098",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Stroop.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/Stroop.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Stroop_form"
@@ -80,13 +80,13 @@
 							,{
 								"module_id":"Stroop_form",
 								"table_id":"20011098",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Stroop_colour_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/Stroop_colour_form.html"
 							}
 							,{
 								"module_id":"ToL",
 								"name":"Tower of London",
 								"table_id":"20011099",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Tower_of_London.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/Tower_of_London.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Tol_form"
@@ -94,13 +94,13 @@
 							,{
 								"module_id":"Tol_form",
 								"table_id":"20011099",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Tower_of_London_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/Tower_of_London_form.html"
 							}
 							,{
 								"module_id":"Prenap_Finger_Tapping",
 								"name":"Pre-Nap Finger Tapping Task",
 								"table_id":"20011100",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/finger_tapping_12.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Prenap_FT"
@@ -108,13 +108,13 @@
 							,{
 								"module_id":"Prenap_FT",
 								"table_id":"20011100",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/finger_tapping_12_form.html"
 							}
 							,{
 								"module_id":"Prenap_KSS",
 								"name":"Pre-Nap KSS",
 								"table_id":"20011101",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/kss.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Prenap_KSS_form"
@@ -122,13 +122,13 @@
 							,{
 								"module_id":"Prenap_KSS_form",
 								"table_id":"20011101",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/kss_form.html"
 							}
 							,{
 								"module_id":"Postnap_KSS",
 								"name":"Post-Nap KSS",
 								"table_id":"20011102",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/kss.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Postnap_KSS_form"
@@ -136,13 +136,13 @@
 							,{
 								"module_id":"Postnap_KSS_form",
 								"table_id":"20011102",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/kss_form.html"
 							}
 							,{
 								"module_id":"Postnap_Finger_Tapping",
 								"name":"Post-Nap Finger Tapping Task",
 								"table_id":"20011103",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/finger_tapping_12.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Postnap_FT"
@@ -150,13 +150,13 @@
 							,{
 								"module_id":"Postnap_FT",
 								"table_id":"20011103",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12_form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/finger_tapping_12_form.html"
 							}
 							,{
 								"module_id":"Post_Nap_DISS",
 								"name":"Post-Nap DISS",
 								"table_id":"20011104",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/DISS.html",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"b_DISS_form"
@@ -164,13 +164,13 @@
 							,{
 								"module_id":"b_DISS_form",
 								"table_id":"20011104",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.form.html"
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/DISS.form.html"
 							}
 							,{
 								"module_id":"Wordpairs",
 								"name":"Memory Test Word Pairs",
 								"table_id":"20011104",
-								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Memory_task.html",
+								"url":"https://garrychowimr.github.io/abc-tv/modules/task/Memory_task.html",
 								"counting":"1",
 								"quest":"1"
 							}
