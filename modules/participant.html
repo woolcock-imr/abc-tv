@@ -104,10 +104,12 @@
 					if(_records[I].UID===undefined) return;
 					td.html("<u style='cursor:pointer'>Quest</u>");
 					td.find('u').on('click',function(){
-						var p="?username="+records[I].S2+"&password="+records[I].S3;
-						var q_url="https://woolcock-imr.github.io/powersleep-recruitment-questionnaire/index.html"+p;
+						var d="";
+						if($vm.server=='development') d="&server=development";
+						var p="?username="+records[I].S2+"&password="+records[I].S3+d;
+						var q_url="https://woolcock-imr.github.io/online-questionnaire/index.html"+p;
 						q_url=$vm.url(q_url)
-						 window.open(q_url);
+						window.open(q_url);
 					})
 					break;
                 case '_Login_ID':

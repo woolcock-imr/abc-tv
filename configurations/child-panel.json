@@ -1,27 +1,15 @@
 {
-	"name":"ABC-TV",
+	"name":"",
 	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters":{
-		"sql_participant" : "@('Initials')+' '+@('DOB')",
-		"child_configuration_url":"https://woolcock-imr.github.io/abc-tv/configurations/child-panel.json"
+		"sql_participant" : "@('Initials')+' '+@('DOB')"
 	},
-	"modules":
-	[
-		{
-		   "module_id" : "participant_login_setup",
-		   "table_id":"20011096",
-		   "url" : "https://woolcock-imr.github.io/abc-tv/modules/participant_login_setup.html"
-		}
-		,{
-		   "module_id" : "questionnaire",
-		   "url" : "https://vmiis.github.io/modules/panels/questionnaire.html"
-		}
-	],
 	"panel":
 	{
 		"columns":
 		[
 			{
+				"hidden":"1",
 				"sections":
 				[
 					{
@@ -47,7 +35,7 @@
 				]
 			}
 			,{
-				"sections":
+				"sections" :
 				[
 					{
 						"name":"Test Battery",
@@ -58,6 +46,8 @@
 								"name":"DISS",
 								"table_id":"20011097",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"DISS_form"
@@ -72,6 +62,8 @@
 								"name":"Stroop Colour",
 								"table_id":"20011098",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Stroop.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Stroop_form"
@@ -86,6 +78,8 @@
 								"name":"Tower of London",
 								"table_id":"20011099",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Tower_of_London.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Tol_form"
@@ -100,6 +94,8 @@
 								"name":"Pre-Nap Finger Tapping Task",
 								"table_id":"20011100",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Prenap_FT"
@@ -114,6 +110,8 @@
 								"name":"Pre-Nap KSS",
 								"table_id":"20011101",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Prenap_KSS_form"
@@ -128,6 +126,8 @@
 								"name":"Post-Nap KSS",
 								"table_id":"20011102",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/kss.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Postnap_KSS_form"
@@ -142,6 +142,8 @@
 								"name":"Post-Nap Finger Tapping Task",
 								"table_id":"20011103",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/finger_tapping_12.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"Postnap_FT"
@@ -156,6 +158,8 @@
 								"name":"Post-Nap DISS",
 								"table_id":"20011104",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/DISS.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1",
 								"form_module":"DISS_form"
@@ -170,6 +174,8 @@
 								"name":"Memory Test Word Pairs",
 								"table_id":"20011104",
 								"url":"https://woolcock-imr.github.io/abc-tv/modules/task/Memory_task.html",
+								"child":"1",
+								"single_record":"1",
 								"counting":"1",
 								"quest":"1"
 							}
