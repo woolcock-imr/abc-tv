@@ -44,6 +44,7 @@ VmInclude:__BASE__/vmiis/Common-Code/toolbar/back_save.html
 		VmInclude:__CURRENT_PATH__/task.form.js
         //----------------------------------
         $('#D__ID').on('load',function(){
+          $('#save__ID').hide();
             _init();
             _field_process();
             _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
