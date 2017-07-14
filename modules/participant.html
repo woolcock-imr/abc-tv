@@ -131,7 +131,7 @@
             _req={cmd:'query_records',db_pid:_db_pid,sql:sql,sql_n:sql_n,s1:'"'+$('#keyword__ID').val()+'"',I:$('#I__ID').text(),page_size:$('#page_size__ID').val()}
         }
         //-------------------------------------
-		___data_process_after_render=function(){
+		_data_process_after_render=function(){
 			I=0;
 			if(_records[I].UID===undefined) return;
 			var module="M_"+_sys.UID+"_participant_child_panel";
