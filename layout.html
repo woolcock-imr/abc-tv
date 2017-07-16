@@ -40,6 +40,8 @@ function F__ID(){
 	    var slideHeight=window.innerHeight;
 		var bk="url("+$vm.hosting_path+"/images/background.jpg) no-repeat bottom center";
 	    $('#slider__ID').css({ width: slideWidth, height: slideHeight, background:bk, 'background-size':'cover' });
+		bk="url("+$vm.hosting_path+"/images/logo.jpg) no-repeat top center";
+		$('#logo_image__ID').css({ background:bk,'background-size':'contain'});
 	}
 	//------------------------------------
 	var on_load=function(){
@@ -115,7 +117,7 @@ function F__ID(){
 	#logo_image__ID{
 		width:380px;
 		height:94px;
-		background: url('https://rt.woolcock.org.au/github/woolcock-imr/woolcock_images/logo.jpg') no-repeat top center;
+		/*background: url('https://rt.woolcock.org.au/github/woolcock-imr/woolcock_images/logo.jpg') no-repeat top center;*/
 		background-size: contain;
 		float:left;
 	}
