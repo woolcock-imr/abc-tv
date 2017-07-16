@@ -39,7 +39,7 @@
 							if(url.indexOf('?')==-1) url=url+"?_v="+$vm.version;
 							else url=url+"&_v="+$vm.version;
 							url=$vm.url(url);
-							if(url[0]=='/') url=$vm.hosting_path+url;
+							if(url[0]=='/') url=$vm.module_hosting_path+url;
 							console.log('loinging '+url);
 							$.get(url,function(text){
 								var text=$('<div/>').html(text).text();
@@ -141,7 +141,7 @@
 				if(url.indexOf('?')==-1) url=url+"?_v="+$vm.version;
 				else url=url+"&_v="+$vm.version;
 				url=$vm.url(url);
-				if(url[0]=='/') url=$vm.hosting_path+url;
+				if(url[0]=='/') url=$vm.module_hosting_path+url;
 				console.log('loinding '+url);
 				$.get(url,function(text){
 					var text=$('<div/>').html(text).text();
