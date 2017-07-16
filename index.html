@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var start=function(){
 		$vm.trust_path=['https://vmiis.github.io','https://raw.githubusercontent.com/vmiis','https://woolcock-imr.github.io','https://garrychowimr.github.io','https://wappsystem.github.io','https://cbs.wappsystem.com','https://rt.woolcock.org.au','https://codepen.io/vmiis'];
 		$vm.reload='';
-		if(window.location.toString().indexOf('_d=1')!=-1){
+		if(window.location.toString().indexOf('_d=3')!=-1){
 			$vm.reload=new Date().getTime().toString();
 		}
 		var url=$vm.hosting_path+'/version.html?_='+new Date().getTime().toString();
